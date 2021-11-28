@@ -13,6 +13,12 @@ app.listen(8081, () => {
 
 let listaRecados = new ListaRecados();
 
+app.get("/", (req,res)=> {
+    res.send(
+        "ok"
+    )
+})
+
 app.get("/recados", (req, res) => {
 
     res.send(
